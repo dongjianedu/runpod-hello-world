@@ -5,13 +5,13 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the requirements file
-COPY runpod-hello-world/requirements.txt .
+COPY requirements.txt .
 
 # Install the Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your handler code
-COPY runpod-hello-world/handler.py .
+COPY handler.py .
 
 # Command to run when the container starts
 CMD [ "python", "-u", "handler.py" ]
