@@ -9,6 +9,7 @@ def handler(job):
     
     # Get the name from the input, default to "World" if not provided
     name = job_input.get("name", "World")
+    test = "Let's make a change!"
     
     # Return a greeting message
     return f"Hello, {name}! Welcome to RunPod Serverless! How are you doing?"
