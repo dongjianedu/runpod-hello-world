@@ -6,6 +6,7 @@ def handler(job):
     The job parameter contains the input data in job["input"]
     """
     job_input = job["input"]
+    test = "This is a new commit!"
     
     # Get the name from the input, default to "World" if not provided
     name = job_input.get("name", "World")
