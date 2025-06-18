@@ -1,6 +1,6 @@
 {
   "title": "RunPod Hello World",
-  "description": "Responds with a "Hello World" regardless of input. Used to test whether handler functions and other RunPod serverless accoutrements are present and functional.",
+  "description": "Responds with a 'Hello World' regardless of input. Used to test whether handler functions and other RunPod serverless accoutrements are present and functional.",
   "type": "serverless",
   "category": "language",
   "iconUrl": "https://your-icon-url.com/icon.png",
