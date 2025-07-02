@@ -1,5 +1,5 @@
 import runpod
-
+import time
 def handler(job):
     """
     This is a simple handler that takes a name as input and returns a greeting.
@@ -11,6 +11,7 @@ def handler(job):
     name = job_input.get("name", "World")
 
     for update_number in range(0, 3):
+        time.sleep(10)  # Simulate a long-running task
         runpod.serverless.progress_update(job, f"Update {update_number}/3")
     # Return a greeting message
     return f"Hello, {name}! Welcome to RunPod Serverless! How are you doing?"
