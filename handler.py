@@ -9,8 +9,8 @@ def handler(job):
     
     # Get the name from the input, default to "World" if not provided
     name = job_input.get("name", "World")
-    
-    
+
+    runpod.serverless.progress_update(job, {"progress":50})
     # Return a greeting message
     return f"Hello, {name}! Welcome to RunPod Serverless! How are you doing?"
 
